@@ -1,7 +1,6 @@
-# README
+# Party Up
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application is designed to help companies and corporations manage the funds and bookings for corporate events. 
 
 Things you may want to cover:
 
