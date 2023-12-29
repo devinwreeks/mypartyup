@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  service_category: MyString
+  phone: MyString
+  discountRate: 9.99
+  contractDetails: MyText
+
+two:
+  name: MyString
+  service_category: MyString
+  phone: MyString
+  discountRate: 9.99
+  contractDetails: MyText

@@ -1,0 +1,42 @@
+<%= form_with(model: partnership) do |form| %>
+  <% if partnership.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(partnership.errors.count, "error") %> prohibited this partnership from being saved:</h2>
+
+      <ul>
+        <% partnership.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :service_category, style: "display: block" %>
+    <%= form.text_field :service_category %>
+  </div>
+
+  <div>
+    <%= form.label :phone, style: "display: block" %>
+    <%= form.text_field :phone %>
+  </div>
+
+  <div>
+    <%= form.label :discountRate, style: "display: block" %>
+    <%= form.text_field :discountRate %>
+  </div>
+
+  <div>
+    <%= form.label :contractDetails, style: "display: block" %>
+    <%= form.text_area :contractDetails %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

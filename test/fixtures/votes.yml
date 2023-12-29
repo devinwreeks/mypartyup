@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  event: one
+  vote_date: 2023-12-28
+  venue_preference: MyString
+  activity_preference: MyString
+
+two:
+  user: two
+  event: two
+  vote_date: 2023-12-28
+  venue_preference: MyString
+  activity_preference: MyString

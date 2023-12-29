@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Party Time</title>
+    <style>
+        body {
+            margin: 0px;
+            font-family: 'Geist', sans-serif;
+        }
+        .mistletoe-image {
+           display: flex;
+           flex-direction: column;
+           align-items: start;
+           height: 100vh;
+        }
+        .cta {
+            display: flex;
+            flex-direction: column;
+            padding-left: 80px;
+        }
+        .santa-round {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 700px;
+            width: 700px;
+            min-width: 700px;
+            min-height: 700px;
+            border-radius: 50%;
+            border: 5px solid white;
+            background: #CCC86B;
+            margin-bottom: 40px;
+        }
+        @media (max-width: 768px) {
+            .santa-round {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 200px;
+                width: 200px;
+                min-width: 450px;
+                min-height: 450px;
+                border-radius: 50%;
+                border: 5px solid white;
+                background: #CCC86B;
+                margin-bottom: 40px;
+            }
+            .santa {
+                height: 300px;
+                width: 300px;
+                margin-right: 0px;
+            }
+            .content {
+                flex-direction: column;
+               height: 100%;
+               width: 100vw;
+               overflow: none;
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               background-image: linear-gradient(to right, #6DB3F2, #1E55A2);
+               color: white;
+               font-family: Arial, sans-serif;
+            }
+            .cta {
+                display: flex;
+                flex-direction: column;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .mistletoe-image {
+               display: flex;
+               flex-direction: column;
+               align-items: start;
+               height: 400px;
+               margin-top: 40px;
+            }
+        }
+        .content {
+            height: 100%;
+            width: 100vw;
+            overflow: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-image: linear-gradient(to right, #6DB3F2, #1E55A2);
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .santa {
+            z-index: 1;
+            margin-bottom: 20px;
+        }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #2A0202;
+            color: white;
+            text-align: center;
+        }
+        .sign-up {
+            background: transparent;
+            padding: 20px;
+            color: #CCC86B;
+            border-radius: 10px;
+            border: 2px solid #CCC86B;
+            cursor: pointer;
+            float: right;
+            margin-top: 10px;
+            font-size: 24px;
+            font-family: 'Geist', sans-serif;
+        }
+        .header-welcome {
+            font-size: 100px;
+            font-weight: 700;
+            margin-bottom: 30px;
+
+        }
+        .header-tagline {
+            font-size: 40px;
+            font-weight: 700;
+            text-align: left;
+            margin-bottom: 40px;
+            font-family: 'Geist', sans-serif;
+        }
+        .header-blurb {
+            font-size: 20px;
+            font-weight: 700;
+            text-align: left;
+            font-family: 'Geist', sans-serif;
+        }
+        .highlight {
+            font-size: 24px;
+            font-weight: 900;
+            font-family: 'Geist', sans-serif;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+  <div class="cta">
+    <div class="header-welcome">
+      My Party Up
+    </div>
+    <div class="header-tagline">
+      Revolutionize Your Year-End Celebrations!
+      <button class="sign-up">Sign up</button>
+    </div>
+    <div class="header-blurb">
+      At Party Up, we believe that a <span class="highlight">remarkable year deserves an equally remarkable celebration.</span> That's why we're dedicated to transforming your end-of-year corporate party from a mere event into an unforgettable experience.
+    </div>
+  </div>
+  <div class="mistletoe-image">
+    <%= image_tag("mistletoe.svg", :alt => "mistletoe", :class => "mistletoe") %>
+  </div>
+  <div class="santa-round">
+    <%= image_tag("santa.svg", :alt => "santa", :class => "santa") %>
+  </div>
+</div>
+<div class="footer">
+    <p>Contact us | Terms and conditions | Privacy policy</p>
+</div>
+</body>
+</html>

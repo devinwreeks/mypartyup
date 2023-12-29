@@ -1,0 +1,2 @@
+module EventPartnershipsHelper
+end
