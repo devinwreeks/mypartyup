@@ -111,6 +111,7 @@
             margin-top: 10px;
             font-size: 24px;
             font-family: 'Geist', sans-serif;
+            text-decoration: none;
         }
         .header-welcome {
             font-size: 100px;
@@ -146,7 +147,7 @@
     </div>
     <div class="header-tagline">
       Revolutionize Your Year-End Celebrations!
-      <button class="sign-up">Sign up</button>
+      <%= link_to 'Sign up', signup_path, class: 'sign-up' %>
     </div>
     <div class="header-blurb">
       At Party Up, we believe that a <span class="highlight">remarkable year deserves an equally remarkable celebration.</span> That's why we're dedicated to transforming your end-of-year corporate party from a mere event into an unforgettable experience.

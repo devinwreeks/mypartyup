@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   before_action :set_user, only: %i[ show edit update destroy ]
 
+
   # GET /users or /users.json
   def index
     @users = User.all
@@ -8,6 +9,17 @@ class UsersController < ApplicationController
 
   # GET /users/1 or /users/1.json
   def show
+  end
+
+  def create_profile
+    with_transaction do
+     company = Company.create!(company_params)
+     User.create!(user_params.merge({company_id: company.id, role: 'admin'}))
+    end
+    binding.pry
+  end
+
+  def signup
   end
 
   # GET /users/new
@@ -65,6 +77,10 @@ class UsersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def user_params
-      params.require(:user).permit(:username, :password_digest, :email, :role, :company_id)
+      params.require(:user).permit(:username, :password, :email, :company_id)
     end
+    def company_params
+      params.require(:company).permit(:company_name, :phone, :industry)
+    end
+
 end

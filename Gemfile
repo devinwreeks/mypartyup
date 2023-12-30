@@ -4,6 +4,8 @@ ruby "3.2.2"
 
 gem 'bcrypt', '~> 3.1.13'
 
+gem 'pry', '~> 0.14.2'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.2"
 
